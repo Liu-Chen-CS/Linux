@@ -8,7 +8,7 @@
 ### Connect to CentoOS 7
 ![Snipaste_2024-03-20_15-59-48](https://github.com/Liu-Chen-CS/Linux/assets/158779475/bd4492db-45be-4a42-9e30-e15d226140a0)
 
-### Commend
+### Command
 |**ls** |    [-a]    |    [-l]    |    [-h]    |    [path]    |
 |----------------------|--------|--------|--------|--------|
 |ls [-a -l -h] [path] |    `displays all files`, including hidden ones    |   `displays` a `long listing format`, showing detailed information    |   Makes file sizes `human-readable`|    path    |
@@ -52,4 +52,19 @@
 |--------|--------|--------|--------|--------|--------|
 | rm test1.txt |    `remove` test1.txt   |`remove` test2.txt   |`remove` test3.txt   |`remove` test.....txt   |`remove` test99999.txt   |
 | rm -r folder|    `remove` a folder    |
+
+|**find** |  path    |  options   |  file name    |
+|--------|--------|--------|--------|
+| find /  -name "test"|    /  |  -name | test |
+| find /  -size -n[kGB]|    /  |  find / -size -10k |  |
+| find /  -size +n[kGB]|    /  |  find / -size +10M |  |
+
+
+|**grep (search for patterns within text files)** |  pattern    | file    |
+|--------|--------|--------|
+| grep "Lisa" test1.txt|  "Lisa" |test1.txt|
+
+|**wc (display the number of lines, words, and characters in a file)** |  [-l]    | [-w]     | [-c]     | file name    |
+|--------|--------|--------|--------|--------|
+| wc test1.txt|  `Count` `lines` in a file |  `Count` `words` in a file |  `Count` `characters` in a file |   |
 
